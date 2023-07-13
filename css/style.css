@@ -1,0 +1,293 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  background-color: #112139;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  line-height: 25px;
+  font-size: 15px;
+  word-spacing: 3px;
+}
+ul li a {
+  color: black;
+}
+
+.fs-6 {
+  font-size: 11px !important;
+}
+
+.switch {
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+
+header {
+  background-color: #112139;
+  position: sticky;
+  top: 0;
+  padding: 3px;
+  z-index: 9999;
+}
+
+section img {
+  border-radius: 33%;
+}
+section .profile {
+  border-radius: 33%;
+  border: 1px solid rgba(128, 128, 128, 0.1098039216);
+  padding: 18px;
+  box-shadow: 2px 1px rgba(227, 219, 219, 0.2392156863);
+  width: 70%;
+  margin: 0 auto;
+}
+section .fs-1 {
+  font-size: 35px !important;
+}
+
+article .next-button, article .prev-button {
+  position: absolute;
+  top: 150px;
+  font-size: 35px;
+  color: white;
+  padding: 10px;
+  border-radius: 18px;
+}
+article .next-button {
+  right: -36px;
+}
+article .prev-button {
+  left: -36px;
+}
+article .my_facility li {
+  margin-right: 50px;
+  padding: 20px 22px;
+  background: rgba(128, 128, 128, 0.1607843137);
+  border-radius: 40px;
+}
+article .my_facility li i {
+  font-size: 60px;
+}
+article .latest_project img {
+  width: 338px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article .latest_project li {
+  margin-right: 60px;
+}
+article .latest_project li p {
+  margin: 0;
+  padding: 0;
+}
+article .latest_project .slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+article .latest_project .slider::-webkit-scrollbar {
+  display: none;
+}
+article .latest_project .slider img:hover {
+  transform: scale(1.06);
+  transition: 4s;
+}
+article .review {
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+  scroll-behavior: smooth;
+}
+article .review::-webkit-scrollbar {
+  display: none;
+}
+article .review ul {
+  display: flex;
+  margin: 0 auto;
+}
+article .review ul li {
+  margin-left: 4rem;
+}
+article .review .customer-fill {
+  width: 1000px;
+  margin-right: 4rem;
+}
+article .review ~ .prev-button,
+article .review ~ .next-button {
+  position: absolute;
+  font-size: 35px;
+  color: white;
+  padding: 10px;
+  border-radius: 18px;
+  top: 70px !important;
+}
+article .education_bar .intro {
+  background: white;
+  color: black;
+  padding: 20px 30px;
+  border-radius: 56px;
+  text-align: center;
+}
+
+footer img {
+  width: 130px;
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+  bottom: 15px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 26px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.anim:hover .fliping {
+  display: block;
+  animation: flip 2s;
+  transition: 0.3s;
+}
+
+.anim:hover .education_bar {
+  display: block;
+  animation: flip 2s;
+  transition: 0.3s;
+}
+
+@keyframes flip {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.light {
+  background-color: white;
+  color: black !important;
+}
+.light header {
+  background-color: white;
+  padding: 5px;
+}
+.light a {
+  color: black !important;
+}
+.light i {
+  color: black;
+}
+.light .intro {
+  background: black;
+  color: white;
+}
+.light #modalContent {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 21px 1px rgba(128, 128, 128, 0.2392156863);
+  border-radius: 8px;
+}
+.light #modalContainer {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+.mob-d-none {
+  display: none;
+}
+
+.connect_me {
+  border: 1px dashed gray;
+  border-radius: 50%;
+  padding: 45px;
+  text-align: center;
+  width: 18%;
+}
+
+.customer-fill {
+  width: 30%;
+  margin: 0 auto;
+}
+
+@media (max-width: 997px) {
+  .mob-d-none {
+    display: block;
+  }
+  .switch {
+    display: block;
+  }
+  header {
+    display: none;
+  }
+  .connect_me {
+    width: 45%;
+  }
+}
+#modalContainer {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+
+#modalContent {
+  background-color: white;
+  width: 80%;
+  height: 70%;
+  margin: 100px auto;
+  padding: 20px;
+  color: black;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile {
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
