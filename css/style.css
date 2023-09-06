@@ -263,6 +263,9 @@ footer img {
     overflow: auto;
     width: 100%;
   }
+  .prev-button, .next-button {
+    display: none;
+  }
 }
 #modalContainer {
   display: none;
