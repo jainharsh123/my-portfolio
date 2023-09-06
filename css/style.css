@@ -259,6 +259,10 @@ footer img {
   .connect_me {
     width: 45%;
   }
+  .my_facility {
+    overflow: auto;
+    width: 100%;
+  }
 }
 #modalContainer {
   display: none;
